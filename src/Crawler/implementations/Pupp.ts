@@ -9,7 +9,7 @@ export default class Pupp implements ICrawler {
     this.browser = await puppeter.launch({
       headless: false,
       defaultViewport: null,
-      userDataDir: "/tmp/fvck_im_da_hacker",
+      userDataDir: "./tmp/fvck_im_da_hacker",
     });
     this.page = await this.browser.newPage();
   }
